@@ -1,51 +1,44 @@
-# work-nigeria
-Work Nigeria is a Django-based web application designed to connect freelancers and clients, similar to platforms like Upwork and Fiverr. The platform allows users to create accounts, post projects, and manage payments seamlessly.
+Project Overview
 
-Overview
+This workspace captures my recent learning and build journey across three tracks: a skills sandbox (Power Learn Project), a practical Python utility (Website Downloader), and a full‑stack Django product (Work Nigeria).
+Power Learn Project (power_learn_project)
 
-Work Nigeria is a Django-based web application designed to connect freelancers and clients, similar to platforms like Upwork and Fiverr. The platform allows users to create accounts, post projects, and manage payments seamlessly.
-Features
+    Purpose: Hands‑on practice across web fundamentals, Python, and basic data workflows.
+    Highlights:
+        Apps scaffolding for typical product domains: accounts, gigs, messaging, payments, projects, reviews.
+        SQL exercises in database/ (schema creation and query tasks).
+        Frontend practice in html_css_js/ (forms, responsive layout, basic interactivity).
+        Python practice in python_tutorial/ (functions, OOP, file handling, list comprehensions, pandas intro).
+    Outcome: Stronger fundamentals across backend, frontend, and data basics through small, focused exercises.
 
-    User Accounts: Users can register, log in, and manage their profiles.
-    Project Listings: Clients can post projects, and freelancers can browse and apply for them.
-    Payment Integration: Secure payment processing for transactions between clients and freelancers.
-    Responsive Design: The website is designed to be mobile-friendly and accessible on various devices.
-    Search Functionality: Users can search for projects and freelancers based on various criteria.
-    Messaging System: Built-in messaging for communication between clients and freelancers.
+Website Downloader (website-downloader)
 
-Technologies Used
+    Purpose: A Python tool to crawl a URL and archive pages/media into a structured public_html directory.
+    Tech: Python, requests, beautifulsoup4, lxml, tqdm (packaged with Poetry).
+    Capabilities:
+        Fetch HTML and discover linked assets.
+        Download pages, images, and other media to a local folder structure.
+        Basic configuration and logging support (per project README).
+    Status: Core scaffolding and docs in place; next steps include robustness (URL normalization, deduping, retries) and CLI UX.
 
-    Backend: Django (Python)
-    Frontend: HTML, CSS, JavaScript
-    Database: SQLite (default) or any other database supported by Django
-    Version Control: Git
+Work Nigeria (work-nigeria)
 
-Installation
-Clone the repository:
+    Purpose: A Django web app connecting clients and freelancers (similar to Upwork/Fiverr concepts).
+    Tech: Django 4.x, Django REST Framework, Channels (+ Redis), CORS headers, Allauth, Crispy Forms, Pillow.
+    Features (scoped in README/requirements):
+        Accounts/auth, profiles, project listings and applications.
+        Messaging, real‑time capabilities via Channels.
+        Payment flow scaffolding and responsive UI foundations.
+    Status: Project structure and dependencies defined with setup docs; next steps include domain models, APIs, and end‑to‑end user flows.
 
-git clone https://github.com/yourusername/work-nigeria.git
+What this adds up to
 
-Navigate to the project directory:
+    Foundation: Practiced core web/Python/SQL skills via targeted exercises.
+    Utility: Built a practical scraping/downloading tool from scratch.
+    Product: Evolving a full‑stack marketplace app with modern Django tooling.
 
-cd work-nigeria
+Near‑term next steps
 
-Install the required packages:
-
-pip install -r requirements.txt
-
-Run database migrations:
-
-python manage.py migrate
-
-Create a superuser (optional):
-
-python manage.py createsuperuser
-
-Start the development server:
-
-python manage.py runserver
-
-    Open your browser and go to http://127.0.0.1:8000/ to view the application.
-
-Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+    Power Learn Project: Add tests and small capstone linking the mini‑apps.
+    Website Downloader: Ship a Windows‑friendly CLI, caching, and robust asset handling.
+    Work Nigeria: Implement core models (users/projects/contracts), DRF endpoints, Channels‑based messaging, and payment integration.
