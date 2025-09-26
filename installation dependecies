@@ -1,0 +1,6 @@
+To run the application:
+
+Install requirements: pip install -r requirements.txt
+Run migrations: python [manage.py](http://_vscodecontentref_/0) makemigrations then python [manage.py](http://_vscodecontentref_/1) migrate
+Create superuser: python [manage.py](http://_vscodecontentref_/2) createsuperuser
+Run server: python [manage.py](http://_vscodecontentref_/3) runserver
